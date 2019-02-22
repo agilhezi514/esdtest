@@ -1,0 +1,18 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Sirketin VOEN-i: {{company_info.voen | crispy}}
+        Sirketin adi   :{{company_info.name | crispy}}
+        Sirketin rehberinin adi   :{{company_info.ceo_first_name | crispy}}
+        Sirketin rehberinin soyadi:{{company_info.ceo_last_name | crispy}}
+    </div>
+</body>
+</html>
